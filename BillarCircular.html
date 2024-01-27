@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Billar circular (Problema de Alhazen simplificado) - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="1100">
+<tr><td>
+<h2>Billar circular (Problema de Alhazen simplificado)</h2>
+<p>
+Se tienen dos bolas A y B en el di&#225;metro de una mesa de billar circular. &#191;A <br/>
+que punto de la circunferencia hay que lanzar A para que al rebotar una vez golpee a B, sin pasar por el centro de la circunferencia? <br/>
+Se supone que sin efecto (las bolas son puntuales, no giran sobre si mismas).<br/>
+Si las bolas no est&#225;n en un mismo di&#225;metro, <a href="https://es.wikipedia.org/wiki/Problema_de_Alhac%C3%A9n">Problema de Alhazen</a>, no puede resolverse con regla y comp&#225;s, requiriendo algebraicamente la resoluci&#243;n de una ecuaci&#243;n de 4&#186; grado.</p>
+
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/g8sZJC4t/width/1100/height/620/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/true/stbh/true/ld/true/sri/true/at/auto" width="1100px" height="620px" style="border:0px;"> </iframe>
+
+<p>
+Basta invertir A y B en c para obtener A' y B', y la intersecci&#243;n de la mediatriz del segmento A'B' con la circunferencia, si la hay, nos da el puntos de reflexi&#243;n.<br/>
+<br/>
+La justificaci&#243;n no es complicada, partiendo de que la inversi&#243;n es una transformaci&#243;n conforme (que mantiene los &#225;ngulos).<br/>
+<br/>
+Dando el problema por resuelto, sea c la circunferencia del billar y P uno de los dos puntos soluci&#243;n (el otro es el sim&#233;trico respecto al di&#225;metro que pasa por A y B). Considerando la inversi&#243;n respcto a c, la recta AP se <br/>
+transforma en la circunferencia c<sub>A</sub> que pasa por A', O y P, y la recta BP en la circunferencia c<sub>B</sub> que pasa por B', O y P.<br/>
+<br/>
+La recta OP se transforma en si misma. Ambas circunferencias c<sub>A</sub> y c<sub>B</sub> pasan por O y por P y deben formar &#225;ngulos iguales en P con la cuerda com&#250;n OP, porque lo forman sus inversas las rectas r<sub>AP</sub> y r<sub>BP</sub>, por lo que tienen el mismo radio.<br/>
+<br/>
+Si las proyecciones de los centros O<sub>A</sub> y O<sub>B</sub> de estas circunferencias sobre la recta AB son M<sub>A</sub> y M<sub>B</sub>, se tiene que M<sub>A</sub> es el punto medio de O y A', y
+M<sub>b</sub> el punto medio de O y B'. Si Q es el punto medio de OP, tambi&#233;n lo es de O<sub>A</sub> y O<sub>B</sub>, y su proyecci&#243;n sobre la recta AB ser&#225; N, el punto medio de M<sub>A</sub> y M<sub>B</sub>.<br/>
+<br/>
+Aplicando ahora una homotecia de centro C y raz&#243;n 2, N se transforma en M, proyecci&#243;n de P sobre la recta AB, mientras que M<sub>A</sub> y M<sub>B</sub> se transforman en A' y B', por lo que M resulta ser el punto medio de A' y B'.<br/>
+<br/>
+Si a y b  son las coordenadas de A y B, tomando O como origen, las coordenadas de A' y B' son 1/a y -1/b, y la de M ser&#225; m = (1/a - 1/b)/2. Para que el problema tenga soluci&#243;n, debe ser |m| &lt; r, donde r es el radio de la circunferencia:<br/>
+<br/>
+ -2r &lt; 1/a - 1/b &lt; 2r<br/>
+<br/>
+Y donde no es imprescindible que a, b &lt; r (el per&#237;metro de la mesa de billar <br/>
+podr&#237;a ser solo en parte circular).<br/>
+<br/>
+El problema se discuti&#243; ampliamente en el grupo de noticias <a href="http://groups.google.co.uk/group/es.ciencia.matematicas/msg/c5acd55889dcbda1">es.ciencia.matematicas</a>, donde se dieron tambi&#233;n otras soluciones.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 31 Agosto 2016, Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

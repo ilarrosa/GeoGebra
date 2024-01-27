@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, analítica, matemáticas, geogebra, curvas, Bézier, splin, parábola, funciones, applet">
+<title>Curvas de B&#233;zier - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="773">
+<tr><td>
+<h2>Curvas de B&#233;zier</h2>
+<p>
+Una <b>Curva de B&#233;zier</b> determinada por <b>n+1 puntos de control {A<sub>0</sub>, A<sub>1</sub>, .., A<sub>n</sub>}</b> es un arco de curva algebraica de grado <b>n</b>, tangente a <b>A<sub>0</sub>A<sub>1</sub></b> y a <b>A<sub>n-1</sub>A<sub>n</sub></b>, descrita por un punto <b>P</b> de la forma<br/>
+<br/>
+<b>P(t) = &#8721;<sub>k=0</sub><sup>n</sup> Comb(n,k)(1-t)<sup>n-k</sup>t<sup>k</sup>A<sub>k</sub>,  0 &#8804; t &#8804; 1</b><br/>
+<br/>
+Separando las coordenadas, se obtienen las ecuaciones param&#233;tricas de la curva (en <b>&#8477;&#178;</b>, <b>&#8477;&#179;</b>, ..). Una recta cualquiera la puede cortar por tanto en un m&#225;ximo de <b>n puntos</b>. La curva se halla contenida completamente en la envolvente convexa de los puntos de control. Puede tener puntos de retroceso y autointersecarse.</p>
+<p>
+Estas curvas pueden enlazarse o cerrarse, haciendo coincidir los puntos iniciales y finales. Para que el enlace sea suave, los puntos anterior y posterior al de enlace deben estar alineados con este. Por tanto, una curva de B&eacute;zier cerrada debe tener al menos 4 puntos de control, el primero y &uacute;ltimo iguales. Y para que sea suave se requieran al menos 5.
+</p>
+
+<iframe scrolling="no" title="Curvas de B&eacute;zier" src="https://www.geogebra.org/material/iframe/id/zphrxntd/width/779/height/616/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="779px" height="616px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+El punto <b>P(t)</b> de la curva puede construirse mediante un armaz&#243;n de puntos y segmentos auxiliares. Si los puntos de control son de <b>orden 0</b>, se construyen <b>n puntos</b> de <b>orden 1</b> de la forma <b>B<sub>i</sub>=(1-t)A<sub>i</sub>+tA<sub>i+1</sub></b>, que recorre el segmento <b>A<sub>i</sub>A<sub>i+1</sub></b> cuando <b>t</b> var&#237;a de <b>0</b> a <b>1</b>. A partir de los de <b>orden 1</b>, se construyen igualmente <b>n-1 puntos</b> de <b>orden 2</b>, y as&#237; sucesivamente hasta llegar a un <b>&#250;nico punto</b> de <b>orden n</b>. Este es <b>P</b>, el punto que traza la curva, que se desplaza instant&#225;neamente en un segmento tangente a la curva. Puede verse este <b>armaz&#243;n</b> marcando la casilla correspondiente. Es mejor utilizar como mucho <b>5 puntos de control</b> para mostrar este armaz&#243;n. Con tres puntos de control, se obtiene un arco de par&#225;bola (<a href= "http://www.xente.mundo-r.com/ilarrosa/GeoGebra/Entramados.html" target="_blank">Entramados de segmentos</a>).<br/>
+<br/>
+La curva se modifica de forma continua al desplazar los puntos de control. Pero al a&#241;adir/suprimir puntos de control, cambia globalmente de forma por lo general notable.<br/>
+<br/>
+Se utilizan ampliamente en dise&#241;o gr&#225;fico e industrial para describir curvas y superficies. <a href="https://es.wikipedia.org/wiki/Pierre_B%C3%A9zier" target="_blank">Pierre B&#233;zier</a> fue un ingeniero franc&#233;s (1910-1999), que dearroll&#243; estas curvas o <i>splines</i> trabajando en la empresa automovil&#237;stica Renault.</p>
+
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 4 abril 2023. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
