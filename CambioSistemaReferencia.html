@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Cambio de sistema de referencia en el plano y Afinidades - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="1130">
+<tr><td>
+<h2>Cambio de sistema de referencia en el plano y Afinidades</h2>
+<p>
+Un sistema de referencia af&#237;n del plano est&#225; formado por un punto y un par de vectores no paralelos, como {O, i, j} &#243; {O', u, v}, y permite asignarle a cada punto P del plano un par de coordenadas de forma biun&#237;voca, las componentes del vector OP en la base formado por los vectores. Los vectores son perpendiculares, la base es ortogonal; si adem&#225;s tienen ambos m&#243;dulo 1, ortonormal. En este &#250;ltimo caso, decimos que el sistema de referencia es cartesiano.<br/>
+<br/>
+Un punto tiene distintas coordenadas en distintos sistemas de referencia, por lo que un cambio de sistema de referencia tambi&#233;n puede verse como una transformaci&#243;n de puntos en el mismo sistema de referencia. Estas transformaciones que se corresconden con cambios de sistema de referencia af&#237;n, se llaman transformaciones afines o afinidades. Las ecuaciones que ligan las coordenadas iniciales y finales de los puntos constituyen, en el plano, un sistema de dos ecuaciones lineal en todas las coordenadas. Una afinidad queda totalmente definida por tres puntos y sus im&#225;genes, por lo que cualquier tri&#225;ngulo puede obtenerse a partir de otro mediante una transformaci&#243;n af&#237;n.<br/>
+<br/>
+Las afinidades incluyen las conocidas traslaciones, giros, simetr&#237;as y homotecias, pero tambi&#233;n llos deslizamientos, en que los puntos se desplazan paralelamente a una l&#237;nea en proporci&#243;n a su distancia a ella, y las contraaciones perpendiculares a una l&#237;nea, en la que los puntos se acercan, o alejan, perpendicularmente a una l&#237;nea, proporcionalmente a su distancia a ella. La composici&#243;n de afinidades tambi&#233;n es una afinidad. Son transformaciones biun&#237;vocas del plano real, sin elementos impropios o del infinito, en si mismo.<br/>
+<br/>
+Una caracter&#237;stica de las afinidades es que conservan la raz&#243;n simple de tres puntos, que no es m&#225;s que el cociente de distancias de tres puntos alineados. Aunque no se conservan los &#225;ngulos, y por tanto las formas, si que lo hacen la incidencia y el paralelismo, as&#237; como los cocientes de &#225;reas. En particular, las rectas se trensforman en rectas, las c&#243;nicas en c&#243;nicas del mismo tipo (elipses, par&#225;bolas o hip&#233;rbolas). En particular, el centro de masas de un conjunto de puntos transformados es el transformado del centro de masa de los puntos originales, como por ejemplo el baricentro de un tri&#225;ngulo o el centro de una c&#243;nica.<br/>
+<br/>
+En la figura se tiene el sistema de referencia can&#243;nico {O, i, j} y otro {O', u, v} que puede cambiarse arrastrando su origen O' o los extremos de sus vectores u y v. Se muestra una c&#243;nica d en color azul, definida por cinco puntos A, B, C, D y E que pueden arrastrarse, y su transformada,  d' en color rojo, por la afinidad inducida por el cambio de sistema de referencia.<br/>
+<br/>
+La situaci&#243;n puede interpretarse como que se cambia el sistema de referencia permaneciendo la curva invariable, y se tienen sus ecuaciones en ambos sistemas de referencia, o que se transforma la curva y se tienen las ecuaciones de ambas en el sistema de referencia inicial.</p>
+
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/uVeXCMEZ/width/1132/height/800/border/888888/rc/false/ai/false/sdz/true/smb/false/stb/true/stbh/true/ld/true/sri/true/at/auto" width="1132px" height="800px" style="border:0px;"> </iframe>
+
+<p>
+Si se marca la casilla 'Ver pasos intermedios' pueden verse las cinco transformaciones elementales en las que se descompone esta afinidad, que lleva d en d', o {O', u, v} en {O, i, j}. Esta descomposici&#243;n no es desde luego &#250;nica. Se trata de:<br/>
+<br/>
+1. Una traslaci&#243;n, que lleva O' en O.<br/>
+2. Una rotaci&#243;n, que hace coicidir las direcciones de los primeros vectores de cada base.<br/>
+3. Deslizamiento paralelo al eje Ox, para hacer coincidir las direcciones de los segundos vectores de cada base.<br/>
+4. Contracci&#243;n hacia Ox, para que el segundo vector de la base tenga m&#243;dulo 1.<br/>
+5. Contracci&#243;n hacia Oy, para que el primer vector de la base tenga m&#243;dulo 1.<br/>
+<br/>
+En cada paso puede verse la curva transformada y el nuevo y antiguo sistema de referencia, en verde y naranja respectivamente, en lo que no coincidan con el inicial o final. Tambi&#233;n los cinco puntos que definen a la c&#243;nica.<br/>
+<br/>
+Las transformaciones afines permiten estudiar en el tri&#225;ngulo que nos resulte m&#225;s conveniente, normalmente el equil&#225;tero o el rect&#225;ngulo is&#243;sceles, los problemas que conciernan exclusivamente a cocientes de distancias de puntos alineados o cocientes de &#225;reas en cualquier tri&#225;ngulo. De la misma forma para elipses y circunferencias, hip&#233;rbolas arbitraria y equil&#225;teras, ... Como los cocientes &#225;reas de <a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/Triangulo_Cevianas_pqr.html">tri&#225;ngulos determinados por determinadas cevianas</a> de otros, de las elipses inscritas y circunscritas con centro en el baricentro, el Porismo de Poncelet para en elipses(<a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/PorismoPoncelet.html">general</a> o <a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/Distancia_I_C.html">tri&aacute;ngulos en circunferencias</a>), o el &#225;rea de la reg&#237;on desde cuyos puntos pueden trazarse tres <a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/TriaBisec.html">rectas que bisecan</a> cada una el &#225;rea de un tri&#225;ngulo ...<br/>
+<br/>
+Si los vectores u y v son perpendiculares y tienen el mismo m&#243;dulo, &#191;c&#243;mo son las formas de las figuras transformadas? &#191;Como se llaman estas transformaciones?<br/>
+<br/>
+&#191;Y si adem&#225;s tienen m&#243;dulo 1?<br/>
+<br/>
+Modifica el sistema {O', u, v} Para tener exclusivamente una traslaci&#243;n, un griro, una simetr&#237;a axial, central (&#191;a que equivale?), una homotecia, un deslizamiento o una contracci&#243;n.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 3 Septiembre 2016, Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="http://www.xente.mundo-r.com/ilarrosa/GeoGebra/" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
