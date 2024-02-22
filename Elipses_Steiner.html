@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, euclídea, analítica, matemáticas, geogebra, triángulo, elipse, Steiner, interior, exterior, máxima, mínima, área, circunferencia, inscrita, circunscrita, polinomio, derivada, raíces, variable compleja, Lucas, Gauss, applet">
+<title>Elipses de Steiner de un tri&#225;ngulo - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="779">
+<tr><td>
+<h2>Elipses de Steiner de un tri&#225;ngulo</h2>
+<p>
+La elipse que pasa por los tres v&#233;rtices de cualquier <b>&#9651;ABC</b> y tiene centro en el baricentro <b>G</b> es la <b>elipse exterior de Steiner</b> del tri&#225;ngulo, <b>S<sub>e</sub></b>. La que es tangente a los tres lados y tiene el mismo centro, es la <b>elipse interior de Steiner</b>, <b>S<sub>i</sub></b>. Son respectivamente la elipse de menor &#225;rea circunscrita al tri&#225;ngulo y de mayor &#225;rea inscrita en &#233;l.<br/>
+<br/>
+Se trata de un problema claramente af&#237;n, pues en una transformaci&#243;n af&#237;n se conservan los cocientes de distancias entre puntos alineados (su raz&#243;n simple), y como consecuencia de ello la alineaci&#243;n de puntos, y el paralelismo y concurrencia de rectas. En particular, las c&#243;nicas se transforman en c&#243;nicas del mismo tipo, con el mismo n&#250;mero de puntos impropios, por lo que la imagen de una elipse es otra elipse. Como por otras parte todos los tri&#225;ngulos son equivalentes bajo transformaciones afines, puede estudiarse el problema en cualquier tri&#225;ngulo, en particular en el equil&#225;tero. En particular se ve que sus ejes est&#225;n alineados y que los semiejes de <b>S<sub>e</sub></b> son el doble que los de <b>S<sub>i</sub></b>, por lo que su superficie es cuatro veces mayor. <br/>
+<br/>
+Expl&#237;citamente, la afinidad que transforma cualquier tri&#225;ngulo en equil&#225;tero puede considerarse compuesta de un deslizamiento paralelo a un lado, al que deja invariante, y que transforme el tri&#225;ngulo en is&#243;sceles, seguida de una contracci&#243;n perpendicular a ese lado, que transforme al tri&#225;ngulo en equil&#225;tero. La primera no cambia el valor de ninguna &#225;rea, por el <b>principio de Cavallieri</b>, y la segunda cambia todas las &#225;reas en la misma proporci&#243;n. Pulsar el bot&#243;n <b>[&#8594; &#9651; equil.]</b> para efectuar esta transformaci&#243;n.<br/>
+<br/>
+</p>
+
+<iframe scrolling="no" title="Elipses de Steiner de un triángulo" src="https://www.geogebra.org/material/iframe/id/ryjzutcw/width/781/height/557/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="781px" height="557px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Pueden desplazarse los v&#233;rtices <b>A</b> y <b>B</b> en cualquier momento, y <b>C</b> cuando el tri&#225;ngulo no es equil&#225;tero.<br/>
+<br/>
+Si los v&#233;rtices del tri&#225;ngulo son los afijos de las ra&#237;ces (complejas) de un polinomio de tercer grado <b>P(z)</b>, con coeficientes en general complejos, los focos de <b>S<sub>i</sub></b> son las ra&#237;ces de <b>P'(z)</b>. Si <b>a</b>, <b>b</b> y <b>c</b> son las ra&#237;ces, tenemos que:<br/>
+<br/>
+<b>P(z)=(z-a)(z-b)(z-c)=z&#179;-(a+b+c)z&#178;+(ab+bc+ca)z-abc</b><br/>
+<b>P'(z)=3z&#178;-2(a+b+c)z+(ab+bc+ca), P'(z)=0 &#8658;</b><br/>
+<b>z = ((a+b+c)&#177;&#8730;(a&#178;+b&#178;+c&#178;-(ab+bc+ca)))/3={p,q}</b><br/>
+<br/>
+son los afijos de los focos <b>S<sub>i</sub></b>.<br/>
+<br/>
+Es un caso particular del <b><a href="https://es.wikipedia.org/wiki/Teorema_de_Gauss-Lucas" target="_blank"> Teorema de Gauss-Lucas</a></b>, que nos dice que las ra&#237;ces de la derivada de un polinomio est&#225;n en la c&#225;psula convexa de las ra&#237;ces del polinomio. Algo as&#237; como una generalizaci&#243;n del <b><a href="Teorema_Rolle.html" target="_blank">Teorema de Rolle</a></b> para polinomios complejos ...<br/>
+<br/>
+La ra&#237;z de la derivada segunda<br/>
+<br/>
+<b>P''(z)=6z-2(a+b+c)</b><br/>
+<br/>
+es <b>g=(a+b+c)/3</b>, cuyo afijo es justamente <b>G</b>, el baricentro del tri&#225;ngulo.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 10 febrero 2021. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

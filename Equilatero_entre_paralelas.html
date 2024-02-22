@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Equil&#225;tero entre paralelas - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="836">
+<tr><td>
+<h2>Equil&#225;tero entre paralelas</h2>
+<p>
+Dadas tres l&#237;neas paralelas l&#8321;, l&#8322; y l&#8323;, tales que la distancia entre l&#8321; y l&#8322; es r, y la distancia entre l&#8322; y l&#8323; es s, y entre l&#8321; y l&#8323; r + s, determinar el lado de un tri&#225;ngulo equil&#225;tero que tiene un v&#233;rtice en cada una de ellas.</p>
+
+<iframe scrolling="no" title="Equilátero entre paralelas" src="https://www.geogebra.org/material/iframe/id/emrsF7Xv/width/833/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="833px" height="577px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Fijado un v&#233;rtice en una de las rectas, la soluci&#243;n es &#250;nica salvo simetr&#237;a, y se obtiene rotando otra de las rectas 60&#186; en torno al punto fijado. Donde la recta girada corta a la tercera es un segundo v&#233;rtice, y el tercero se obtiene deshaciendo el giro. Dependiendo del sentido de giro, se obtiene una soluci&#243;n o su sim&#233;trica.<br/>
+<br/>
+El c&#225;lculo del lado del tri&#225;ngulo en funci&#243;n de r y s es sencillo:<br/>
+<br/>
+r = d&#183;sen(&#945;)   &#8658;  sen(&#945;) = r/d<br/>
+s = d&#183;sen(60&#186; - &#945;) = d((&#8730;3/2)cos(&#945;) - (1/2)sen(&#945;))<br/>
+2s = d(&#8730;3&#8730;(1 - (r/d)&#178;) - r/d) = &#8730;3&#8730;(d&#178; - r&#178;) - r &#8658;<br/>
+(2s + r)&#178; = 3(d&#178; - r&#178;)  &#8658;  4s&#178; + 4sr + r&#178; =3d&#178; - 3r&#178;  &#8658;<br/>
+3d&#178; = 4(r&#178; + rs + s&#178;)   &#8658;    d = 2&#8730;((r&#178; + rs + s&#178;)/3)<br/>
+<br/>
+Para evitar duplicidades y encuadrar bien el tri&#225;ngulo, se debe introducir en el panel izquierdo valores de r y s tales que 0 &lt; r &#8804; s. Pulsando el bot&#243;n [Soluci&#243;n param&#233;trica] se asignan a r y s los valores deducidos del panel derecho, tal y como se explica a continuaci&#243;n.<br/>
+<br/>
+Es una ecuaci&#243;n homog&#233;nea de 2&#186; grado en tres variables. Si estamos interesados en sus soluciones enteras, podemos dividir la pen&#250;ltuima ecuaci&#243;n por d&#178; y hacer x = r/d, y = s/d, con lo que nos queda:<br/>
+<br/>
+x&#178; + xy + y&#178; = 3/4<br/>
+<br/>
+Esta es la ecuaci&#243;n de una elipse en el plano Oxy. Los ejes son las bisectrices de los cuadrantes. Si localizamos un punto de coordenadas racionales, cualquier recta de pendiente racional que pase por el, volver&#225; a cortar a la elipse en otro punto de coordenadas racionales. Dos puntos obvios de coordenadas racionales son (+/-1/2, +/-1/2). Como estamos interesados en puntos de coordenadas positivas, tomamos como v&#233;rtice del haz de rectas el punto (-1/2, -1/2). La ecuaci&#243;n de cualquier recta que pase por &#233;l es<br/>
+<br/>
+y + 1/2 = t(x + 1/2)<br/>
+<br/>
+Para evitar duplicidades, y dado que solo estamos interesados en valores positivos, tomaremos r &lt; s y ambos positivos, lo que restringe los valores de t a [1, 1 + &#8730;3]. Despejendo y en la ecuaci&#243;n de la recta, sutituyendo en la de la elipse y dividiendo por (x + 1/2), ya que x = - 1/2 es una soluci&#243;n, nos queda:<br/>
+<br/>
+x = - (t&#178; - 2t - 2)/(2(t&#178; + t + 1))<br/>
+y = (2t&#178; + 2t - 1)/(2(t&#178; + t + 1))<br/>
+<br/>
+Para cada valor racional de t, se obtienen valores racionales de x e y, que multiplicados por el mcm de sus denominadores, que sera d, nos proporcionan r y s, todos enteros.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 18 octubre 2016. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
