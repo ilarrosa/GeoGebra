@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, matemáticas, geogebra, ESO, ortoedro, cubo, máximo común divisor, principio exclusiones-inclusiones, termita, applet">
+<title>Termita en ortoedro - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="773">
+<tr><td>
+<h2>Termita en ortoedro</h2>
+<p>
+Una termita avanza de un v&#233;rtice de un ortoedro hasta su opuesto en l&#237;nea recta. Si el ortoedro est&#225; compuesto por m&#215;n&#215;p cubos unitarios, &#191;cu&#225;ntos de estos cubos atravesar&#225; la termita?</p>
+
+<iframe scrolling="no" title="Termita en ortoedro" src="https://www.geogebra.org/material/iframe/id/aptse9em/width/641/height/512/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/true/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="641px" height="512px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Cambia de cubo cada vez que atraviesa uno de los (m-1) + (p-1) + (q-1) planos que separan los cubos, n&#250;mero al que debemos sumar el cubo de partida.<br/>
+<br/>
+Pero atraviesa una arista perpendicular a los lados de longitud m y n (mcd(m, n) - 1) veces, por lo que hay que descontar esta cantidad, as&#237; como (mcd(n, p) - 1) y mcd(m, p) - 1). Pero si atraviesa un v&#233;rtice interior, lo que ocurre (mcd(m, n, p) - 1) veces, atraviesa tres aristas. El nuevo cubo por el que pasa lo hemos contado tres veces, descontado otras tres, y por tanto debemos a&#241;adirlo una vez. En definitiva:<br/>
+<br/>
+N = 1 + (m-1) + (n-1) + (p-1) - (mcd(m, n) - 1) - (mcd(n, p) - 1) - (mcd(p, m) - 1) + (mcd(m, n, p) - 1)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;= m + n + p - mcd(m, n) - mcd(n, p) - mcd(p, m) + mcd(m, n, p)<br/>
+<br/>
+Si mcd(m, n) = mcd(n, p) = mcd(p, m) = 1, queda N = m + n + p - 2.<br/>
+<br/>
+En la figura, m = 8, n = 6 y p = 4, por lo que se atraviesan 8 + 6 + 4 - 2 - 2 - 4 + 2 = 12 cubos.<br/>
+<br/>
+Para un problema similar en 2 dimensiones ver <a href="hormiga.html" target=_blank">La hormiga en la plaza</a>.
+</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (grupo XeoDin), 29 junio 2021. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

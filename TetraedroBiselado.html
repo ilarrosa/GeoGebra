@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, euclídea, matemáticas, geogebra, cálculo integral, secciones, tetraedro, biselado, prismatoide, fórmula de Simpson, 3D, applet, sansu_seijin, most1612">
+<title>Tetraedro biselado - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="773">
+<tr><td>
+<h2>Tetraedro biselado</h2>
+<p>
+En el interior de un tetraedro <b>[ABCD]</b> de lado <b>10</b> (<b>n</b>) se desplaza un tetraedro <b>P</b> de arista <b>1</b>, de manera que siempre mantiene una de sus aristas enteramente en contacto con una del grande. Determimar el volumen <b>NP</b> no barrido por el tetraedro <b>P</b>. </p>
+
+<iframe scrolling="no" title="Tetraedro biselado" src="https://www.geogebra.org/material/iframe/id/facacb68/width/1410/height/732/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/true/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1410px" height="732px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+El cuerpo <b>NP</b> resultante es un tetraedro al que se le han biselado las seis aristas a una distancia <b>1</b>. Es un cuerpo con 4 caras triangulares de arista <b>7</b> (<b>n-3</b>), centradas en las caras del tetraedro inicial, y seis caras hexagonales. Estas se pueden considerar formadas por un rect&#225;ngulo de longitud <b>7</b> (<b>n-3</b>) y ancho <b>1</b>, m&#225;s dos tri&#225;ngulos rect&#225;ngulos e is&#243;sceles de hipotenusa <b>1</b>. Una de ellas es <b>[EFGHIJ]</b>.<br/>
+<br/>
+El volumen <b>NP</b> se puede calcular como el de <b>[ABCD]</b> menos el de 6 <b><i>prismatoides</i></b>, con unas bases iguales a <b>[EFGHIJ]</b> y las otras reducidas a una arista como <b>AB</b>, con una altura <b>h</b> igual a la distancia entre aristas opuestas del tetraedro <b>P</b>, que es <b>&#8730;2/2</b>. Sus secciones planas paralelas a la base a una distancia <b>d</b> varian a lo sumo cuadr&#225;ticamente con <b>d</b>, ya que las longitudes de sus lados lo hacen linealmente.<br/>
+<br/>
+Por tanto, el volumen puede calcularse con la <b><i>f&#243;rmula de Simpson</i></b>, exacta para funciones cuadr&#225;ticas: <b>V=&#8537;h(S&#8321;+4&#183;S<sub>m</sub>+S&#8322;)</b>, siendo <b>S&#8321;</b> y <b>S&#8322;</b> las &#225;reas de las bases y <b>S<sub>m</sub></b> la de la secci&#243;n a media distancia <b>d = &#189; h</b>.<br/>
+<br/>
+En este caso es <b>S&#8321; = [EFGHIJ]</b>, <b>S&#8322; = [AB]=0</b>, y en cuanto a <b>S<sub>m</sub></b> se trata de un hex&#225;gono compuesto por un rect&#225;ngulo de longitud <b>&#189;(10+7)</b> y anchura <b>&#189;</b>, y dos tri&#225;ngulos rect&#225;ngulos e is&#243;sceles adosados, de hipotenusa <b>&#189;</b>. <br/>
+<br/>
+Se ha usado que el volumen del tetraedro regular de arista a es <b>V<sub>Tr</sub> = &#8730;2/12 a&#179;</b>. Si la arista <b>AB</b> tuviese longitud <b>n</b> y la del tetraedro <b>P</b> longitud <b>1</b>, el volumen de <b>NP</b> ser&#237;a <b>n&#179;-18n+30</b> veces el de <b>P</b>.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 23 febrero 2021. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

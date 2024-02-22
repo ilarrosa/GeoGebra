@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, euclídea, matemáticas, geogebra, círculo, circunferencia, sumas, cuadrados, radio, curvatura, teorema, Descartes, Soddy, Apolonio, tamiz, Sacred Temple Geometry,applet">
+<title>Teorema de los C&#237;culos de Descartes - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="1442">
+<tr><td>
+<h2>Teorema de los C&#237;culos de Descartes</h2>
+<p>
+Dados tres c&#237;rculos mutuamente tangentes <b>{&#969;&#8321;, &#969;&#8322;, &#969;&#8323;}</b>, siempre puede construise entre ellos otro <b>&#969;&#8324;</b>, tangente a los tres. Igualmente, siempre puede construirse otro <b>&#969;&#8320;</b> tangente a los tres y que los contenga. Se dice que estos son tangentes interiormente a aqu&#233;l. <a href="https://es.wikipedia.org/wiki/Ren%C3%A9_Descartes" target="_blank">Descartes</a> encontr&#243; una sencilla relaci&#243;n entre los radios <b>r<sub>i</sub></b>, que se expresa con mayor sencillez en funci&#243;n de las inversas de los radios, las curvaturas <b>k<sub>i</sub>=1/r<sub>i</sub></b>.<br/>
+<br/>
+El Teorema nos dice entonces que <b>el cuadrado de la suma de las curvaturas es dos veces la suma de sus cuadrados</b>. Las curvaturas deben considerarse negativas si la tangencia es interior, como en el caso del c&#237;rculo <b>&#969;&#8320;</b>. </p>
+<p>
+Las tres expresiones de la primera l&iacute;nea son consecuencia de un lema previo: <a href="Tangente_Cuerda_3Circ.html" target="_blank">Relaci&oacute;n entre cuerda y tangente en tres circunferencias tangentes</a>.
+</p>
+
+<iframe scrolling="no" title="Teorema de los Cículos de Descartes" src="https://www.geogebra.org/material/iframe/id/wzbmd4tc/width/1439/height/786/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" width="1439px" height="786px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+El proceso se puede continuar indefinidamente, tomando tres de los c&#237;rculos mutuamente tangentes, incluyendo o no al exterior, para obtener otros dos tangentes a los tres. Se obtienen as&#237; los llamados &#171;<a href="https://es.wikipedia.org/wiki/Tamiz_de_Apolonio" target="_blank">Tamices de Apolonio</a>&#187;, por <a href="https://es.wikipedia.org/wiki/Apolonio_de_Perge" target="_blank">Apolonio de Perga</a> que resolvi&#243; el problema de hallar c&#237;rculos tangentes a otros tres, aunque fue <a href="https://es.wikipedia.org/wiki/Gottfried_Leibniz" target="_blank">Leibnitz</a> quien primero que los estudi&#243;.<br/>
+<br/>
+Observese que:<br/>
+<br/>
+<b>k&#8324;,&#8320; = k&#8321; + k&#8322; + k&#8323; &#177; 2&#8730;(k&#8321;k&#8322; + k&#8322;k&#8323; + k&#8323;k&#8321;)</b><br/>
+<br/>
+De esta forma si  <b>k&#8321;</b>, <b>k&#8322;</b>, <b>k&#8323;</b> son enteros, <b>k&#8320;&#8712;&#8484; &#8660; k&#8324;&#8712;&#8484;</b>. De este forma, si se tienen <b>4 c&#237;rculos</b> mutuamente tangentes de curvaturas enteras, con la debida escala, puede construirse a partir de ellas un conjunto de c&#237;rculos tangentes cada uno a tres de los ya construidos, todos con curvatura entera. Es el caso de los  &#171;<a href="https://es.wikipedia.org/wiki/Tamiz_de_Apolonio" target="_blank">Tamices de Apolonio</a>&#187; enteros.<br/>
+<br/>
+Hay una relaci&#243;n similar entre los centros de los c&#237;rculos. Consider&#225;ndolos como n&#250;meros complejos <b>z<sub>i</sub></b>, se tiene que:<br/>
+<br/>
+<b>(k&#8321;z&#8321; + k&#8322;z&#8322; + k&#8323;z&#8323; + k&#8324;z&#8324;)&#178; = 2(k&#8321;&#178;z&#8321;&#178; + k&#8322;&#178;z&#8322;&#178; + k&#8323;&#178;z&#8323;&#178; + k&#8324;&#178;z&#8324;&#178;)<br/>
+<br/>
+z&#8324;,&#8320; = (k&#8321;z&#8321; + k&#8322;z&#8322; + k&#8323;z&#8323; &#177; 2&#8730;(k&#8321;z&#8321;k&#8322;z&#8322; + k&#8322;z&#8322;k&#8323;z&#8323; + k&#8323;k&#8321;z&#8321;z&#8323;))/k&#8324;</b><br/>
+ <br/>
+La f&#243;rmula fue generalizada por <a href="https://es.wikipedia.org/wiki/Frederick_Soddy" target="_blank">Soddy</a> para <b>5 esferas</b> en el espacio, y por <a href="https://es.wikipedia.org/wiki/Thorold_Gosset" target="_blank">Gosset</a> para para <b>n+2 hiperesferas</b> en el espacio de dimensi&#243;n <b>n</b>:<br/>
+<br/>
+<b>(&#8721;<sub>i=1</sub><sup>n+</sup>&#178;k<sub>i</sub>)&#178; = n&#8721;<sub>i=1</sub><sup>n+</sup>&#178;k<sub>i</sub>&#178;</b><br/>
+<br/>
+En cualquier n&#250;mero de dimensiones, la f&#243;rmula nos da una curvatura en funci&#243;n de las restantes mediante una ecuaci&#243;n de 2&#186; grado. Los dos valores se corresponden con las dos hiperesferas tangentes, interior o exteriormente dependiendo del signo de la curvatura, a las dem&#225;s.</p>
+<p>
+Tomado de &#171;<i>Sacred Mathematics. Japanese Temple Geometry</i>&#187; de F. Hidetoshi y T. Rothman (pg.  289).
+</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 21 noviembre 2023. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

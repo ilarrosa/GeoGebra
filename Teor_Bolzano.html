@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Teorema de Bolzano - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="924">
+<tr><td>
+<h2>Teorema de Bolzano</h2>
+<p>
+Si f(x) es continua en [a, b] y alcanza valores de diferente signo en los extremos del intervalo, existe un c en (a, b) tal que f(c) = 0.<br/>
+El m&#233;todo de bisecci&#243;n para la aproximaci&#243;n de ra&#237;ces de una funci&#243;n continua consiste en localizar un intervalo [a, b] en cuyos extremos la funci&#243;n alcance valores de distinto signo. En virtud del teorema, entre ellos debe haber al menos una ra&#237;z. Se prefija un valor &epsilon; para la precisi&#243;n con que se desea conocer la ra&#237;z y se aplica el algoritmo:<br/>
+<br/>
+1. c:= (a + b)/2<br/>
+2. Si f(c) = 0 o |b - a| &lt; &epsilon;: &rArr; c es el valor de la ra&#237;z o una aproxim&#225;c&#243;n con error menor que &epsilon;/2, <b>FIN</b><br/>
+3. Si signo(f(c)) = signo(f(a)), entonces c:= a; en caso contrario, c:= b<br/>
+4. Ir al paso 1.<br/>
+<br/>
+En este applet, el algoritmo termina cuando el valor de f(c) es 'bastante' peque&#241;o, de manera que el programa lo confunde con cero, pese a no serlo.<br/>
+</p>
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/szYKF7nT/width/924/height/592/border/888888/sfsb/true/rc/true/ai/false/sdz/true/smb/false/stb/false/stbh/true/ld/true/sri/true/at/auto" width="924px" height="592px" style="border:0px;" allowfullscreen> </iframe>
+<p>
+Pulsa el bot&#243;n <b>[Iteraci&#243;n]</b> para realizar cada iteraci&#243;n.
+<br/>
+<br/>
+La funci&#243;n se puede cambiar en la correspondiente caja de entrada de la ventana inferior. Si la funci&#243;n introducida no es continua en el intervalo [a, b], podr&#225;n producirse resultados extra&#241;os.
+<br/>
+<br/>
+Si cambias manualmente los valores de a o b, se reinicia el contador de iteraciones.
+<br/>
+<br/>
+Utiliza los botones <b>[Zoom +]</b> y <b>[Zoom -]</b> para ampliar  o reducir la escala y centrar el punto (c, 0). Para recuperar la vista est&#225;ndar, hay que hacer clic en el panel superior y pulsar <b>[Ctrl] + [M]</b>.
+<br/>
+<br/>
+Si no est&#225; visible el eje OY, aparecen las coordenadas de la esquina superior izquierda e inferior derecha.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 3 octubre 2013. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="matemáticas, combinatoria, geogebra, ESO, Bachillerato, triángulo, Tartaglia, Pascal, fila, applet">
+<title>Fila n-sima del tri&#225;ngulo de Tartaglia-Pascal - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="1600">
+<tr><td>
+<h2>Fila n-sima del tri&#225;ngulo de Tartaglia-Pascal</h2>
+<p>
+Para determinar toda la fila n-sima del tri&#225;ngulo no es necesario conocer las filas anteriores. Tenemos que:<br/>
+<br/>
+C(n,k)=n!/(k!(n-k)! &#8658; C(n,k+1)=n!/((k+1)!(n-k-1)!)<br/>
+&#8756; C(n,k+1)=C(n,k)&#183;(n-k)/(k+1), k=0..(n-1)<br/><br/>
+Para la fila n-sima basta entonces empezar con 1, multiplicar por n y dividir por 1 para obtener el 2&#186; elemento<br/>
+y continuar disminuyendo el multiplicador y aumentando el divisor hasta legar al 1 final.</p>
+
+<iframe scrolling="no" title="Fila n-sima del triángulo de Tartaglia-Pascal" src="https://www.geogebra.org/material/iframe/id/ergm675w/width/1600/height/169/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1600px" height="169px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Al introducir un nuevo valor para n en el cajet&#237;n correspondiente se reiniciliza la tabla.<br/>
+Pulsando el bot&#243;n siguiente se va obteniendo cada t&#233;rmino de la fila hasta llegar al 1 final. </p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (grupo XeoDin), 28 julio 2021. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
