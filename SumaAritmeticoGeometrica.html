@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="matemáticas, geogebra, Bachillerato,  cálculo, sumas, progresiones, aritmetico, geométricas, applet">
+<title>Suma de una progresi&#243;n aritm&#233;tico geom&#233;trica - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="773">
+<tr><td>
+<h2>Suma de una progresi&#243;n aritm&#233;tico geom&#233;trica</h2>
+<p>
+Los t&#233;rminos de una progresi&#243;n aritm&#233;tico geom&#233;trica de grado k, son iguales al producto de un polinomio de grado k, por las potencias de la raz&#243;n:<br/>
+<br/>
+a(n) = P<sub>k</sub>(n)&#183;r<sup>n</sup><br/>
+<br/>
+Aqui se muestra gr&#225;ficamente la suma de todos los t&#233;rminos de la progresi&#243;n, la suma de la serie aritm&#233;tico geom&#233;trica de primer grado con P<sub>1</sub>(n) = &frac12; n  y  r = &frac12;: &nbsp; &nbsp; a(n) = n&#183;(&frac12)<sup>n+1</sup>.<br/>
+<br/>
+La serie converge &#8660; |r| &lt; 1</p>
+
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/tMrgzXaW/width/800/height/655/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="655px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Para sumar las de primer grado, tanto las sumas finitas como las series cuando |r| &lt; 1, basta con multiplicar la suma/serie por la raz&#243;n y restarla de la suma:<br/>
+<br/>
+S<sub>n</sub> = Sum((a +k&#183;b)&#183;r<sup>k</sup>, k, 0, n),  r&#183;S<sub>n</sub> =  Sum((a +k&#183;b)&#183;r<sup>k+1</sup>, k, 0, n)<br/>
+<br/>
+S<sub>n</sub> - r&#183;S<sub>n</sub> = (1-r)S<sub>n</sub> = a + b&#183;Sum(r<sup>k+1</sup>, k, 1, n) - (a + n&#183;b)&#183;r<sup>n+1</sup><br/>
+<br/>
+Y de aqui se despeja S<sub>n</sub>, despu&#233;s de sumar la progresi&#243;n geom&#233;trica. Si |r| &lt; 1, el &#250;ltimo t&#233;rmino tiende a 0 cuando n &#8594; &#8734;, y queda<br/>
+<br/>
+S = a/(1-r) + b&#183;r/(1-r)<sup>2</sup> = (a + (b-a)r)/(1-r)<sup>2</sup>
+</br></br>
+En el ejemplo, a = 0, b = r = &frac12;.</br></br>
+
+Si el polinomio es de grado superior al primero, debe repetirse el proceso, rebajandose un grado de cada vez.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 2 abril 2017. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
