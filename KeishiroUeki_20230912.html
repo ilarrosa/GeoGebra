@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, euclídea, matemáticas, geogebra, trigonometría, estrella, oscilante, articulada, polígonos, áreas, sucesión, recurrente, applet">
+<title>Estrella oscilante - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="600">
+<tr><td>
+<h2>Estrella oscilante</h2>
+<p>
+En las posiciones extremas se tienen estrellas de 5 puntas asim&#233;tricas, pero sim&#233;tricas una de la otra. Todos los pol&#237;gonos coloreados son r&#237;gidos, pero las uniones entre ellos est&#225;n articuladas.</p>
+
+<iframe scrolling="no" title="Estrella oscilante" src="https://www.geogebra.org/material/iframe/id/zdz7xghz/width/540/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="540px" height="537px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Si el lado del pentag&#243;no central es <b>1</b>, &#191;cualto valen las &#225;reas <b>S(n)</b> de los sucesivos tri&#225;ngulos y trapecios?<br/>
+<br/>
+Haciendo <b>a(0)=0</b>, <b>a(1)=1</b> y <b>a(n)</b> las longitudes en orden de los distintos lados de los pol&#237;gonos, se tiene que<br/>
+<br/>
+<b>a(n+1) = 2cos(54&#186;)a(n)+a(n-1) = &#8730;(10-2&#8730;5)/2 a(n) + a(n-1)</b><br/>
+<br/>
+Las alturas de los tri&#225;ngulos y de los trapecios es:<br/>
+<br/>
+<b>h(n) = sen(54&#186;)a(n) = (&#8730;5+1)/4 a(n)</b><br/>
+<br/>
+Y las &#225;reas ser&#225;n entonces;<br/>
+<br/>
+<b>S(n)=h(n) (a(n-1) + a(n+1))/2 = (&#8730;5+1)/4 a(n)(a(n-1) + &#8730;(10-2&#8730;5)/4 a(n))</b><br/>
+<br/>
+donde para los tri&#225;ngulos es <b>n = 1</b>.<br/>
+<br/>
+Resolviendo la recurrencia lineal homog&#233;nea de 2&#186; orden para <b>a(n)</b>, se puede obtener expl&#237;citamente:<br/>
+<br/>
+<b>a(n) = &#8730;(82&#8730;5 + 1066)/82((&#8730;(26 - 2&#8730;5)/4 + &#8730;(10 - 2&#8730;5)/4)&#8319; - (&#8730;(10 - 2&#8730;5)/4 - &#8730;(26 - 2&#8730;5)/4)&#8319;)</b><br/>
+<br/>
+<b>S(n) = ((&#8730;(13 - &#8730;5) + &#8730;(5 - &#8730;5))&#178;&#8319; - (&#8730;(13 - &#8730;5) - &#8730;(5 - &#8730;5))&#178;&#8319;)&#183;&#8730;(164&#183;&#8730;5 + 451)/(2&#179;&#8319;&#8314;&#178;41)</b><br/>
+<br/>
+Para <b>n = 1..5</b><br/>
+<br/>
+<b>a(n) = 1, &#8730;(10 - 2&#8730;5)/2, 7/2 - &#8730;5/2, &#8730;(65 - 22&#8730;5), 16 - 4&#8730;5</b><br/>
+<br/>
+<b>S(n) = &#8730;(2&#8730;5 + 10)/8, &#8730;(170 - 2&#8730;5)/8, &#8730;(3370 - 802&#8730;5)/8, 3&#8730;(9290 - 3422&#8730;5)/8, 5&#8730;(1450 - 610&#8730;5)</b></p>
+<p>A partir de <a href="https://x.com/KeishiroUeki/status/1701564600029007937?s=20" target="_blank">@KeishiroUeki</a></p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 18 septiembre 2023. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
