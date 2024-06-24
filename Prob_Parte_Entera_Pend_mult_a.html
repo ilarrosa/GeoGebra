@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Probabilidad, geométrica, pendiente, parte entera, múltiplo, matemáticas, cálculo, seires, geogebra, digamma, applet">
+<title>Probabilidad que la parte entera del cociente de coordenadas sea m&#250;ltiplo de a - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="834">
+<tr><td>
+<h2>Probabilidad que la parte entera del cociente de coordenadas en un cuadrado unitario sea m&#250;ltiplo de a</h2>
+<p>
+Se generan aleatoriamente puntos dentro de un cuadrado de lado <b>1</b>, con distribuci&#243;n uniforme. Los puntos para los que <b>&#8970;y/x&#8971; &#8801; 0 (mod a)</b> se presentan de color azul.</p>
+
+<iframe scrolling="no" title="Probabilidad que la parte entera del cociente de coordenadas sea múltiplo de a" src="https://www.geogebra.org/material/iframe/id/am4b3rnk/width/834/height/697/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="834px" height="697px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Como<br/>
+<br/>
+<b>&#8970;y/x&#8971; = k &#8660; k &#8804; y/x &lt; k+1 &#8660; kx &#8804; y &lt; (k+1)x</b><br/>
+<br/>
+Estos puntos est&#225;n situados entre las rectas <b>y = kx</b> e <b>y =(k+1)x</b>, y dentro del cuadrado <b>[0, 1]&#215;[0,1]</b>. Para <b>k &gt; 1</b> este recinto es el tri&#225;ngulo de v&#233;rtices <b>{(0, 0), (1/k, 1), (1/(k+1), 1)}</b> y para <b>k = 0</b> el tri&#225;ngulo <b>{(0, 0), (1, 0), 1, 1)}</b>. Por tanto, la probabilidad de que la parte entera del cociente sea m&#250;ltiplo de <b>a</b> es:<br/>
+<br/>
+<b>P(a) = &#189; + &#189;&#8721;_{k=1}^{&#8734;} (1/(ak) - 1/(ak + 1)) = &#189; + 1/(2a)(&#968;(1+1/a) + &#947;)</b><br/>
+<br/>
+donde <b>&#968;(z)=(&#915;&#180;(z))/(&#915;(z))</b> es la funci&#243;n digamma, <b>&#915;(z)</b> es la funci&#243;n Gamma de Euler, y <b>&#947;</b> es la constante de Euler-Mascheroni.<br/>
+<br/>
+Para <b>a = 2</b> y <b>3</b>, los valores te&#243;ricos exactos son:<br/>
+<br/>
+<b>P(2) = 1 - &#189; ln2 &#8773; 0.653426</b><br/>
+<b>P(3) = 1- ln3/4 - &#8730;3&#960;/36 &#8773; 0.574197</b><br/>
+<br/>
+Cuando <b>a &#8594; &#8734;</b>, evidentemente <b>P(a) &#8594; &#189;</b><br/>
+<br/>
+Puede verse con más detalle en <a href="Prob_Parte_Entera_Pend_mult_a.pdf" target="_blank">Probabilidad que la parte entera del cociente de coordenadas en un cuadrado unitario sea múltiplo de <b>a</b></a>
+<br>
+<br>
+Pulsando el bot&#243;n <b>[Renovar puntos]</b>, se obtiene una nueva serie de puntos. Las <b>10</b> &#250;ltimas frecuencias se almacenan en las celdas <b>B2</b> a <b>B11</b>.  En la celda <b>B13</b> se tiene la media de estos <b>10</b> &#250;ltimos valores, que debe ser una mejor aproximaci&#243;n de la probabildad, y en la <b>B14</b> su desviaci&#243;n t&#237;pica.<br/>
+<br/>
+Despu&#233;s de utilizar la <b>[Animaci&#243;n]</b>, la desviaci&#243;n t&#237;pica no es representativa, pues los <b>10</b> &#250;ltimos valores de la frecuencia ser&#225;n muy parecidos. Es necesario pulsar el bot&#243;n <b>[10 series nuevas de puntos]</b>, para generar <b>10</b> nuevas series de puntos, anot&aacute;ndose los <b>10</b> nuevos valores independientes de la frecuencia en las celdas <b>B2</b> a <b>B11</b>, y recalcul&aacute;ndose la media y desviaci&#243;n t&#237;pica. Repite el proceso <b>10</b> veces, anotando los valores de las medias en las celdas <b>C2</b> a <b>C11</b> y copia el contenido del bloque <b>B13:B14</b> en <b>C13:C14</b>. Observa como la desviaci&#243;n t&#237;pica de estas medias  es sensiblemente inferior a la desviaci&#243;n tipica de una sola serie de <b>10</b> valores.<br/>
+<br/>
+Despu&#233;s de cambiar el valor de <b>a</b>, es necesario renovar los puntos, mejor con el bot&#243;n <b>[10 series nuevas de puntos]</b>.<br/>
+<br/>
+Hecho a partir de un reto propuesto en el grupo de telegram <a href="https://t.me/Retos_Matematicos" target="_blank">Retos Matem&#225;ticos</a> (25/06/2024).<br/>
+</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 24 junio 2024. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
