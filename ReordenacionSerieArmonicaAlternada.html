@@ -13,11 +13,13 @@
 <tr><td>
 <h2>Reordenaci&#243;n de la serie arm&#243;nica alternada</h2>
 <p>
-Una serie de n&#250;meros reales converge condicionalmente si converge pero diverge la serie de los valores absolutos de sus t&#233;rminos. Para ello es necesario que el t&#233;rmino general tienda a cero y que contenga infinitos t&#233;rminos positivos e infinitos negativos.<br/>
+Una serie de n&#250;meros reales converge condicionalmente si converge, pero diverge la serie de los valores absolutos de sus t&#233;rminos. Para ello es necesario que el t&#233;rmino general tienda a cero y que contenga infinitos t&#233;rminos positivos e infinitos negativos.<br/>
 <br/>
-A diferencia de lo que sucede con una serie absolutamente convergente, si se reordenan un n&#250;mero infinito de t&#233;rminos de estas series, el valor de su suma cambia. De hecho, reorden&#225;ndolos convenientemente, se puede hacer que la serie tienda a cualquier n&#250;mero real <b>a</b>. El proceso es simple: se toman t&#233;rminos hasta superar el valor prefijado <b>a</b>, a continuaci&#243;n suficientes t&#233;rminos negativos para que la suma sea menor que <b>a</b>, y as&#237; indefinidamente. Como el t&#233;rmino general tiende a cero y las series de t&#233;rminos positivos y negativos por separado deben divergir, esto asegura la convergencia a <b>a</b>.<br/>
+A diferencia de lo que sucede con una serie absolutamente convergente, si se reordenan un n&#250;mero infinito de t&#233;rminos de estas series, el valor de su suma cambia. De hecho, reorden&#225;ndolos convenientemente, se puede hacer que la serie tienda a cualquier n&#250;mero real <b>a</b>. El proceso es simple: se toman t&#233;rminos hasta superar el valor prefijado <b>a</b>, a continuaci&#243;n suficientes t&#233;rminos negativos para que la suma sea menor que <b>a</b>, y as&#237; indefinidamente. Como el t&#233;rmino general tiende a cero y las series de t&#233;rminos positivos y negativos por separado deben divergir, esto asegura la convergencia a <b>a</b>. Esto es el conocido <i>Teorema de Riemann</i> sobre la reordenaci&oacute;n de series convergentes.<br/>
 <br/>
-Para comprobarlo, introducir en el cajet&#237;n de entrada de la izquierda cualquier valor de <b>a</b> y pulsar los botones <b>[1 +]</b>, <b>[10 +]</b>, <b>[100 +]</b>, <b>[1000 +]</b> o <b>[m +]</b>, seleccionado primero el valor deseado de <b>m</b>, para a&#241;adir el n&#250;mero indicado de t&#233;rminos a la suma <b>s</b>.<br/>
+La serie arm&oacute;nica alternada, de t&eacute;rmino deneral <b>(-1)<sup>n+1</sup>/n</b>, es un ejemplo de serie condicionalmente convergente. En este applet puede verse como verifica el Teorema de Riemmann con cualquier valor real <b>a</b>.<br/>
+<br/>
+Para ello, debemos escribir en el cajet&#237;n de entrada de la izquierda cualquier valor de <b>a</b> y pulsar los botones <b>[1 +]</b>, <b>[10 +]</b>, <b>[100 +]</b>, <b>[1000 +]</b> o <b>[m +]</b>, seleccionado primero el valor deseado de <b>m</b>, para a&#241;adir el n&#250;mero indicado de t&#233;rminos a la suma <b>s</b>.<br/>
 <br/>
 Solo se muestran los 20 primeros t&#233;rminos, pero se calcula <b>s</b> y el n&#250;mero <b>p</b> de t&#233;rminos positivos y <b>n</b> de negativos en cualquier caso.<br/>
 <br/>
@@ -26,13 +28,16 @@ En la gr&aacute;fica puede verse como evoluciona la suma. Pueden utilizarse las 
 <iframe scrolling="no" title="Reordenación de la serie armónica alternada" src="https://www.geogebra.org/material/iframe/id/GmVmybVX/width/978/height/668/border/888888/sfsb/true/smb/false/stb/true/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="978px" height="668px" style="border:0px;" allowfullscreen> </iframe>
 
 <p>
-Si se calculan demjasiados t&#233;rminos de vez, como con el bot&#243;n <b>[1000 +]</b>, la respuesta puede tardar e incluso producirse un error. No obstante si ocurre esto &#250;ltimo, se puede seguir con incrementos m&#225;s peque&#241;os.<br/>
+Si se calculan demasiados t&#233;rminos de vez, como con el bot&#243;n <b>[1000 +]</b>, la respuesta puede tardar e incluso producirse un error. No obstante si ocurre esto &#250;ltimo, se puede seguir con incrementos m&#225;s peque&#241;os.<br/>
 <br/>
 La suma se reinicia con el bot&#243;n [Reinicio] o cambiando el valor de <b>a</b>.<br/>
 <br/>
 Si se toman <b>p</b> t&#233;rminos positivos, seguidos de <b>n</b> negativos, otra vez <b>p</b> positivos y as&#237; sucesivamente, la serie converge a <b>&frac12; ln(4p/n)</b>, como puede verse en este <a href="ReordenacionSeriesArmonicasAlternadas.pdf">PDF</a>.<br/>
 <br/>
 Si <b>a &#8800;1/2 ln(4p/n)</b>, con <b>p</b> y <b>n</b> enteros positivos, de todas formas la raz&#243;n <b>p/n</b> de t&#233;rminos positivos y negativos entre los <b>k</b> primeros, tiende a <b>&frac14; e<sup>2a</sup></b>.</p>
+<p>
+<a href="https://es.wikipedia.org/wiki/Bernhard_Riemann" target="_blank">Georg Friedrich Bernhard Riemann</a> (Breselenz, 17/9/1826-Verbania, 20/7/1866) fue un matem&aacute;tico alem&aacute;n que realiz&oacute; contribuciones muy importantes al an&aacute;lisis y la geometr&iacute;a diferencial. Su nombre est&aacute; conectado con la funci&oacute;n zeta, la hip&oacute;tesis de Riemann, la <a href="SumasRiemann.html" target="_blank">integral de Riemann</a>, el lema de Riemann, las variedades de Riemann, las superficies de Riemann y la geometr&iacute;a de Riemann 
+</p>
 <p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 1 junio 2017. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
 <a href="index.html" target="_blank" >P&aacute;gina principal</a>
 </td></tr>
