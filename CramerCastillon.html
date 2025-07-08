@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Problema de Cramer-Castillon - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="632">
+<tr><td>
+<h2>Problema de Cramer-Castillon</h2>
+<p>
+Dada una c&#243;nica <b>&#915;</b> y tres puntos <b>P</b>, <b>Q</b> y <b>R</b> no situados sobre ella, construir un tri&#225;ngulo inscrito en <b>&#915;</b> y cuyos lados, o sus prolongaciones, pasen por los tres puntos dados.<br/>
+<br/>
+Propuesto por <a href="https://es.wikipedia.org/wiki/Gabriel_Cramer" target="_blank">Cramer</a> a <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Castillon/" target="_blank">Castillon</a>, fue resuelto por este en 1776, 25 a&#241;os despu&#233;s de la muerte de Cramer.<br/>
+<br/>
+La soluci&#243;n que se presenta aqui, mediante haces proyectivos, no es obviamente la de Castillon, los m&#233;todos proyectivos se desarrollaron m&#225;s tarde, pero si es probablemente la m&#225;s sencilla.<br/>
+<br/>
+En el art&#237;culo &#171;<a href="https://revistalva2.github.io/articulos/" target="_blank">Varias soluciones al problema de Cramer-Castillon</a>&#187; de Francisco Javier Garc&#237;a Capit&#225;n y Jos&#233; Manuel S&#225;nchez Mu&#241;oz, pueden verse &#233;sta y otras soluciones, as&#237; como m&#225;s informaci&#243;n sobre la historia del problema.</p>
+
+<iframe scrolling="no" title="Problema de Cramer-Castillon" src="https://www.geogebra.org/material/iframe/id/wr7ydv8f/width/634/height/599/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="634px" height="599px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Cada uno de los puntos <b>{P, Q, R}</b> define una involuci&#243;n proyectiva de <b>&#915;</b>, donde a cada punto <b>L</b> de <b>&#915;</b> se le asocia la otra intersecci&#243;n <b>L'</b> de la recta que pasa por <b>L</b> y por <b>{P, Q, R}</b> con <b>&#915;</b>. Si el punto <b>{P, Q, R}</b> es exterior a <b>&#915;</b>, la involuci&#243;n tienen como puntos dobles los de contacto de las tangentes a <b>&#915;</b> trazadas desde <b>L;</b> si es interior, carece de puntos dobles.<br/>
+<br/>
+Si se componen las tres involuciones en un determinado orden, se obtiene otra involuci&#243;n, que asocia a cada punto <b>L</b> de <b>&#915;</b> otro <b>L'''</b>. Los puntos dobles de esta involuci&#243;n nos proporcionan uno de los v&#233;rtices de los tri&#225;ngulos soluci&#243;n <b>T</b> y <b>T'</b>. <br/><br/>
+Estos puntos dobles son las intersecciones <b>A</b> y <b>A'</b> del eje proyectivo <b>e<sub>P</sub></b> de la involuci&#243;n con <b>&#915;</b>. Habr&#225; dos soluciones si <b>e<sub>P</sub></b> es secante a <b>&#915;</b>, una si es tangente y ninguna si es exterior.<br/>
+<br/>
+Para determinar el eje proyectivo de la involuci&#243;n, necesitamos tres puntos <b>L</b>, <b>M</b> y <b>N</b>, y sus hom&#243;logos <b>L'''</b>, <b>M'''</b> y <b>N'''</b>. Las intersecciones <b>LM'''&#8745;ML'''</b>, <b>LN'''&#8745;NL'''</b> y <b>MN'''&#8745;NM'''</b> est&#225;n sobre <b>e<sub>P</sub></b>. Basta con hallar dos de ellas.<br/>
+<br/>
+A partir de <b>A</b> y <b>A'</b> no tenemos m&#225;s que aplicar las proyecciones definidas por los puntos <b>P</b> y <b>Q</b> dados, para obtener los otros v&#233;rtices de los tri&#225;ngulos soluci&#243;n.<br/>
+<br/>
+De las seis involuciones que pueden definirse las correspondientes a los puntos <b>P</b>, <b>Q</b> y <b>R</b>, tres son inversas de las otras tres, es decir son iguales, por lo que solo hay tres distintas. Cada una de ellas tiene como eje proyectivo a las rectas <b>AA'</b>, <b>BB'</b> y <b>CC'</b>, por lo que en definitiva proporcionan las mismas soluciones.<br/>
+<br/>
+Puede seguirse la construcci&#243;n paso a paso con los controles de la barra inferior, y en cualquier momento desplazar los puntos <b>P</b>, <b>Q</b> y <b>R</b> o los cinco peque&#241;os puntos blancos que determinan la c&#243;nica. En particular puede verse como <b>e<sub>P</sub></b> no depende de los puntos <b>L</b>, <b>M</b> y <b>N</b> usados para construirlo. Los puntos <b>{P, Q, R}</b> pueden ser exteriores o interiores a la c&#243;nica, pero no estar situados en ella. Si algunos son exteriores, estar&#225;n en las prolongaciones de los lados, en lugar de en los propios lados. <br/>
+<br/>
+Con el rat&#243;n pueden escogerse puntos y desplazarlos, mover toda la figuar o hacer zoom de acercamiento o alejamiento.<br/>
+<br/>
+ </p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 8 julio 2025. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
