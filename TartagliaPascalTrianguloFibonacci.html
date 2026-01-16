@@ -15,14 +15,31 @@
 <p>
 Los n&#250;meros de Fibonacci:<br/>
 <br/>
-F<sub>1</sub> = F<sub>2</sub> = 1,  F<sub>m+1</sub> = F<sub>m</sub> + F<sub>m-1</sub><br/>
+<b>F<sub>1</sub> = F<sub>2</sub> = 1,  F<sub>m+1</sub> = F<sub>m</sub> + F<sub>m-1</sub></b><br/>
 <br/>
-se obtienen en el tri&#225;ngulo de Tartaglia-Pascal, sumando los n&#250;meros que aparecen en las diagonales con pendiente &#189;</p>
+se obtienen en el <a href="TartagliaPascalTriangulo.html" target="_blank">tri&#225;ngulo de Tartaglia-Pascal</a>, sumando los n&#250;meros que aparecen en las diagonales con pendiente <b>&#189;</b></p>
 
-<iframe scrolling="no" title="Números de Fibonacci en el triángulo de Tartaglia-Pascal" src="https://www.geogebra.org/material/iframe/id/xnuufsdj/width/1394/height/511/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1394px" height="511px" style="border:0px;" allowfullscreen> </iframe>
+<iframe scrolling="no" title="N&uacute;meros de Fibonacci en el tri&aacutee;ngulo de Tartaglia-Pascal" src="https://www.geogebra.org/material/iframe/id/xnuufsdj/width/1394/height/511/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1394px" height="511px" style="border:0px;" allowfullscreen> </iframe>
 
 <p>
+Girando el tri&aacute;ngulo para apoyarlo sobre la fila izquierda de unos, se puede obtener una demostraci&oacute;n combinatoria. Colocar el deslizador <b>m</b> del applet anterior en <b>11</b> para una mejor identificaci&oacute;n.</p>
+<p>
+En una ret&iacute;cula cuadrada, se numeran puntos consecutivos en una l&iacute;nea horizontal como <b>1 .. n</b>. Por cada uno de ellos se traza una l&iacute;nea <b>l<sub>n</sub></b> de pendiente <b>-&#189;</b>. Se cuentan entonces de dos formas el n&#186; de caminos <b>C<sub>n</sub></b> constituidos por pasos de longitud <b>1</b> hacia la derecha o hacia arriba que llevan desde el punto <b>1</b> hasta cualquier punto de la l&iacute;nea <b>l<sub>n</sub></b>. Para <b>l<sub>1</sub></b> y <b>l<sub>2</sub></b>, no representadas, hay un solo camino: de cero pasos para <b>l<sub>1</sub></b> y de un paso horizontal para <b>l<sub>2</sub></b>.
 </p>
+<p>
+Esto tambi&eacute;n podr&iacute;a hacerse directamente sobre el tri&aacute;ngulo, sustituyendo los pasos a la derecha por pasos hacia abajo a la izquierda, y los pasos hacia arriba por pasos hacia abajo a la derecha, desde el v&eacute;rtice inicial a la diagonal que nos interese. Pero queda un poco m&aacute;s claro como se hace a continuaci&oacute;n.
+</p>
+
+<iframe scrolling="no" title="Números de Fibonacci en el triángulo de Tartaglia-Pascal" src="https://www.geogebra.org/material/iframe/id/v2neffqq/width/1276/height/510/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1276px" height="510px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+<b>1&#170; forma</b>: La l&iacute;nea <b>l<sub>n</sub></b> se alcanza por caminos con un &uacute;ltimo paso horizontal <b>C<sub>&rarr;</sub></b> o vertical <b>C<sub>&uarr;</sub></b>. Pero los <b>C<sub>&rarr;</sub></b> provienen de <b>l<sub>n-1</sub></b>, por lo que  <b>C<sub>&rarr;</sub></b> = <b>C<sub>n-1</sub></b>, mientras que los <b>C<sub>&uarr;</sub></b> provienen de <b>l<sub>n-2</sub></b>, por lo que <b>C<sub>&uarr;</sub></b> = <b>C<sub>n-2</sub></b>. Como <b>C<sub>1</sub> = C<sub>2</sub> = 1</b>, se concluye que <b>C<sub>n</sub></b> es el n-simo n&uacute;mero de Fibonacci, <b>F<sub>n</sub></b>.</p>
+<p>
+<b>2&#170; forma</b>: El n&uacute;mero de caminos que llegan a la l&iacute;nea <b>l<sub>n</sub></b> es la suma del n&uacute;mero de caminos que llegan a cada uno de sus puntos. Para llegar a cada uno de estos puntos, hay que dar, en cualquier orden, <b>k</b> pasos verticales y <b>(n - 1) - 2k</b> horizontales. En total, <b>n - k - 1</b> pasos, de los que <b>k</b> son verticales. Y estos pueden ir desde <b>0</b> hasta la parte entera de <b>(n - 1)/2</b>, pues la base de este tri&aacute;ngulo tiene longitud <b>n - 1</b> y la altura <b>(n - 1)/2</b>, no existiendo punto de la cuadr&iacute;cula en la recta  <b>l<sub>n</sub></b> en la vertical del punto <b>1</b> si <b>n</b> es par.</p>
+<p>
+Se concluye por tanto que <b>F<sub>n</sub></b> es igual a la referida sumatoria.
+</p>
+
 <p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (grupo XeoDin), 29 julio 2021. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
 <a href="index.html" target="_blank" >P&aacute;gina principal</a>
 </td></tr>
