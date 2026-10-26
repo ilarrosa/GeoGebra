@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<META name="keywords" Content="Geometría, euclídea, matemáticas, geogebra, lugar geométrico, triángulo equilátero, circunferencia, circunscrita, coaxiales, recta, Simson, applet">
+<title>Lugar geom&#233;trico enga&#241;oso - GeoGebra Hoja Din&#225;mica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="GeoGebra" />
+<style type="text/css"><!--body { font-family:Arial,Helvetica,sans-serif; margin-left:40px }--></style>
+</head>
+<body>
+<table border="0" width="634">
+<tr><td>
+<h2>Lugar geom&#233;trico enga&#241;oso</h2>
+<p>
+<b>P</b> es un punto en la circunferencia circunscrita al tri&#225;ngulo equil&#225;tero <b>&#9651;ABC</b>. <b>A'</b>, <b>B'</b> y <b>C'</b> son los pies de las perpendiculares trazadas desde <b>P</b> a los lados <b>a</b>, <b>b</b> y <b>c</b>, que est&#225;n en la <a href="CirculoPedal_RectaSimson.html" target="_blank">recta de Simson</a> del punto <b>P</b>, y sea  <b>O</b> el circuncentro del <b>&#9651;ABC</b>. Entonces las circunferencias <b>c<sub>A</sub> = OAA'</b>, <b>c<sub>B</sub> = OBB'</b> y <b>c<sub>C</sub> = OCC'</b> son coaxiales. Es decir, comparten un mismo eje radical <b>e<sub>r</sub></b>, por lo que sus centros <b>O<sub>A</sub></b>, <b>O<sub>B</sub></b> y <b>O<sub>C</sub></b> est&aacute;n alineados, y al ser secantes, se cortan en el mismo par de puntos. Sea <b>Q</b> el otro punto de corte, distinto de <b>O</b>, en que se cortan.<br/>
+<br/>
+El lugar geom&#233;trico de <b>Q</b> cuando <b>P</b> var&#237;a en la circunferencia circunscrita semeja estar formado por los tres arcos de c&#237;rcunferencia <b>BA''C</b>,<b>CB''A</b> y <b>AC''B</b>, donde <b>A''</b>, <b>B''</b> y <b>C''</b> son los sim&#233;tricos de <b>A</b>, <b>B</b> y <b>C</b> respecto de los lados <b>a</b>, <b>b</b> y <b>c</b>. Las circunferencias de estos tres arcos pasan por <b>O</b>.</p>
+
+<iframe scrolling="no" title="Lugar geométrico engañoso" src="https://www.geogebra.org/material/iframe/id/dkzmqyn9/width/636/height/626/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="636px" height="626px" style="border:0px;" allowfullscreen> </iframe>
+
+<p>
+Pero en realidad no es as&#237;. El lugar geom&#233;trico es una curva algebraica de grado 10 que pasa por <b>A</b>, <b>B</b>, <b>C</b>, <b>A''</b>, <b>B''</b> y <b>C''</b>, y que se aparta del conjunto de los tres arcos una distancia m&#225;xima de <b>0.0092R</b>, donde <b>R</b> es el radio de la circunferencia circunscrita al <b>&#9651;ABC</b> y de los tres arcos. Este distancia m&#225;xima se produce cuando el punto <b>Q</b> se halla aproximadamente a unos <b>11.9&#176;</b> de <b>A</b>, <b>B</b> o <b>C</b>, &#225;ngulo medido respecto del centro del arco respectivo. Nunca hay que fiarse de las apariencias...<br/>
+<br/>
+<img src="GT_232_err.png" alt="Detalle de la distancia entre los arcos y el lugar" width="600" border="1"><br/>
+<br/>
+Parando la animaci&#243;n, puede desplazarse el punto <b>P</b> con el deslizador <b>&#952;</b>, que indica el &#225;ngulo polar de <b>P</b> respecto de <b>O</b>, o directamente con el rat&#243;n. Cuando <b>210&#176; &lt; &#952; &lt; 330&#176;</b>, puede marcarse la casilla <b>[Dist]</b> para ver la distancia del punto <b>Q</b>, en el lugar geom&#233;trico, al arco <b>BA''C</b>, as&#237; como la distancia angular del punto <b>Q</b> al <b>C</b>, medida desde el centro de ese arco. Se puede hacer zoom y desplazar la vista gr&#225;fica.<br/>
+<br/>
+La ecuaci&#243;n del lugar en coordenadas baric&#233;ntricas &laquo;tan solo&raquo; tiene <b>57 t&eacute;rminos</b>:<br/>
+<br/>
+x&#8312;y&#178; + 2x&#8311;y&#179; - 129x&#8310;y&#8308; + 508x&#8309;y&#8309; - 129x&#8308;y&#8310; + 2x&#179;y&#8311; + x&#178;y&#8312; - 2x&#8312;yz + 126x&#8311;y&#178;z - 638x&#8310;y&#179;z - <br/>
+126x&#8309;y&#8308;z - 126x&#8308;y&#8309;z - 638x&#179;y&#8310;z + 126x&#178;y&#8311;z - 2xy&#8312;z + x&#8312;z&#178; + 126x&#8311;yz&#178; + 254x&#8310;y^2z&#178; + <br/>
+770x&#8309;y&#179;z&#178; + 2x&#8308;y&#8308;z&#178; + 770x&#179;y&#8309;z&#178; + 254x&#178;y&#8310;z&#178; + 126xy&#8311;z&#178; + y&#8312;z&#178; + 2x&#8311;z&#179; - 638x&#8310;yz&#179; + <br/>
+770x&#8309;y&#178;z&#179; - 774x&#8308;y&#179;z&#179; - 774x&#179;y&#8308;z&#179; + 770x&#178;y&#8309;z&#179; - 638xy&#8310;z&#179; + 2y&#8311;z&#179; - 
+129x&#8310;z&#8308; - 126x&#8309;yz&#8308; + <br/>
+2x&#8308;y&#178;z&#8308; - 774x&#179;y&#179;z&#8308; + 2x^2y&#8308;z&#8308; - 126xy&#8309;z&#8308; - 129y&#8310;z&#8308; + 508x&#8309;z&#8309; - 126x&#8308;yz&#8309; + 770x&#179;y&#178;z&#8309; +<br/>
+770x&#178;y&#179;z&#8309; - 126xy&#8308;z&#8309; + 508y&#8309;z&#8309; - 129x&#8308;z&#8310; - 638x&#179;yz&#8310; + 254x&#178;y&#178;z&#8310; - 638xy&#179;z&#8310; - 129y&#8308;z&#8310; + <br/>
+2x&#179;z&#8311; + 126x&#178;yz&#8311; + 126xy&#178;z&#8311; + 2y&#179;z&#8311; + x&#178;z&#8312; - 2xyz&#8312; + y&#178;z&#8312; = 0
+<br/>
+<br/>
+Propuesto por <a href="https://groups.io/g/euclid/message/10529" target="_blank">Antreas Hatzipolakis, Oct 23 3026</a>. Resuelto por <a href="https://garciacapitan.epizy.com/" target="_blank">Francisco Javier Garc&#237;a Capit&#225;n</a>.</p>
+<p><span style="font-size:small">Ignacio Larrosa Ca&#241;estro (Grupo XeoDin), 26 octubre 2026. Creado con <a href="http://www.geogebra.org/" target="_blank" >GeoGebra</a></span></p>
+<a href="index.html" target="_blank" >P&aacute;gina principal</a>
+</td></tr>
+</table>
+</body>
+</html>
